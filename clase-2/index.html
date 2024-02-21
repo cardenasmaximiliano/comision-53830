@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav> <!--unica etiqueta-->
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="./pages/contacto.html">contacto</a></li>
+                <li><a href="./pages/tiendas.html">tienda</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <!--etiquetas de contenido-->
+    <p id="ir-al-top">texto</p>
+    <!--etiqueta de titulo, heading tags, las fomosas H-->
+    <h1>titulo 1</h1> <!--h1 solamente se pueden aplicar 1 por HTML-->
+    <h2>titulo 2</h2> <!--2 al 6 todos los que necesitemos-->
+    <h3>titulo 3</h3>
+    <h4>titulo 4</h4>
+    <h5>titulo 5</h5>
+    <h6>titulo 6</h6>
+
+    <h1>chevrolet</h1>
+    <section>
+        <h2>autos</h2>
+        <p>INFO DE LOS AUTOS DE CHEVROLET</p>
+            <section>
+                <article> <!---->
+                    <h3>cruze</h3>
+                        <h4>hachback</h4>
+                        <h4>sedan</h4>
+                </article>
+                <article>
+                    <h3>onix</h3>
+                </article>
+            </section>
+    </section>
+
+    <!--lista-->
+    <!--listas ordenadas, listas desordenadas y listas de definicion-->
+    <!--listas ordenadas =>-->
+  
+    <ol>
+        <li>lavar el arroz</li>
+        <li>hervir agua</li>
+        <li>ponerle sal</li>
+        <li>poner el arroz</li> 
+    </ol>
+
+    <!--listas desordenadas-->
+
+    <ul> <!--solemos utilizarla para hacer las barra de navegacion-->
+        <li>arroz</li>
+        <li>aceite</li>
+        <li>condimento para arroz</li>
+    </ul>
+
+    <!-- listas de definicion-->
+    <dl>
+        <dt>coderhouse</dt>
+        <dd>instituto donde aprender carreras it</dd>
+        <dt>Lorenzo</dt>
+        <dd>un buen tutor</dd>
+    </dl>
+
+    <!-- enlaces: absolutos me permiten interactuar con otros sitios  -->
+    
+    <!--ancla, anchor o simplemente la etiqueta -->
+    <a href="https://www.coderhouse.com" target="_blank">coderhouse</a>
+    <a href="https://www.facebook.com/" target="_blank">facebook</a>
+
+    <!--enlaces internos  etiqueta ancla y etiqueta receptora(cualquier etiqueta HTML, va a estar acompañada de un atributo id)-->
+    <a href="#ir-al-top">ir al top</a>
+
+    <!--enlaces relativos
+    
+        .  => que vamos hacia adelante
+        .. => hacemos referencia a que vamos hacia atras
+
+    -->
+    
+    <a href="./pages/tiendas.html">tienda</a>
+
+
+    <!--multimedia-->
+
+    <img src="./assets/img/lista-de-verificacion.png" alt="tilde de correcto color naranja">
+    <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen de unsplash con montañas">
+
+    <audio src="./assets/audio/audio.mp3" controls></audio>
+    <video src="./assets/video/schnauzer.mp4" controls></video>
+
+    <!--otras etiquetas que nos traen fragmentos de otros sitios web llamados iframes-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UrgQMkBhy8A?si=FQ04uHYQkPnlo0Bx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0GkuKdv0osuL9QhfnXqVNP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4447.341431281574!2d-57.57382641940369!3d-37.98307328117846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d93f65cb40f5%3A0xbdb8de8869ebf2e1!2sTIENDA%20LE%C3%93N%20MDQ!5e0!3m2!1ses-419!2sar!4v1708527006181!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./assets/img/facebook.png" alt="">facebook</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
