@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+/*
+selectores por etiquetas
+
+**/
+
+h1{
+    color: red;
+    background-color: #F6F193;
+
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
+selectores por clase
+atributo class= " " dentro de la etiqueta de apertura de HTML
+
+para escribir clases: nosotros tenemos diferentes maneras. 
+
+kebab: article-noticias;
+camelCase: articleNoticias
+snake_case: article_noticias 
+
+para que nosotros activemos una clases en css se pone un punto adelante de la palabra elegida
+
+las clases son reutilizables, quiere decir que podemos utilizarlas
+tanto como sean necesarias. 
+
+*/
+
+/* section{
+    background-color: lightblue;
+}
+
+section article{
+    background-color: lightcoral;
+}
+
+section article p{
+    background-color: yellow;
+} */
+
+p{
+    color: red;
+}
+.articleNoticias{
+    background-color: #7b9d7b;
+}
+
+article p{
+    color: pink;
+}
+
+.articleNoticias p{
+    color: violet;
+}
+
+#idNoticias p{
+    color: blue;
+}
+
+/**
+ID
+SOLAMENTE SE PUEDE UTILIZAR 1 VEZ. 
+ES UN IDENTIFICADOR UNICO
+
+ESTA RESERVADO PRINCIPALMENTE PARA JS.
+SE DICE QUE SI TENEMOS MAS DE 10IDS en un html
+ES PORQUE NO PODEMOS CONTROLAR NUESTRO CODIGO CSS.
+
+existen jerarquias
+
+id
+class
+etiquetas
+
+**/
+
+/* .sectionCascada p{
+    background-color: blue;
+}
+.sectionCascada p{
+    background-color: red;
+}
+.sectionCascada p{
+    background-color: #7b9d7b;
+} */
+
+
+.sectionCascada p{
+
+    /* propiedadestexto*/
+    text-align:justify;
+    text-decoration: underline;
+    text-transform:lowercase; 
+    text-shadow: 4px 5px 4px black;
+    text-indent: 20px;
+    
+    /*fonts*/
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
