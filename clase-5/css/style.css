@@ -1,0 +1,146 @@
+/**
+fuentes van primero
+@import
+
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**codigo de practica**/
+.teoria-flex{
+    display: flex;
+    width: 100%;
+    height: 31.25rem;
+    background-color: rgb(0, 0, 0);
+    /**direccion - flexible**/
+    flex-direction: row;/*propiedad que me dice como se van a comportar los hijos en base a direccion**/
+    flex-wrap: wrap;
+
+    /**movimientos**/
+    justify-content: space-around;
+    /**esta propiedad solamente funciona cuando los elementos estan en wrap*/
+    /* align-content: space-evenly; */
+
+  align-items: center; 
+}
+
+.teoria-flex div{
+    width: 150px;
+    height: 150px;
+
+}
+
+
+.teoria-flex .div1{
+    background-color: lightblue;
+    align-self: flex-end;
+    order: 5;
+}
+.teoria-flex .div2{
+    background-color: rgb(186, 230, 173);
+    order: 2;
+}
+.teoria-flex .div3{
+    background-color: rgb(229, 230, 173);
+    align-self: flex-start;
+    order: 3;
+}
+.teoria-flex .div4{
+    background-color: rgb(230, 177, 173);
+    order: 4;
+}
+.teoria-flex .div5{
+    background-color: rgb(184, 173, 230);
+    order: 1;
+}
+.teoria-flex .div6{
+    background-color: rgb(230, 173, 228);
+    order: 6;
+}
+
+
+
+/**codigo en la vida  real**/
+
+.header-index{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.194);
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0px 20px;
+    position: sticky;
+     top: 0 ;
+}
+.header-index div{
+    width: 10%;
+}
+.header-index nav{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.navBar{
+
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: #FF8600;
+    font-size: 20px;
+}
+
+.section-principal{
+    width: 100%;
+    height: 37.5rem;
+    background-image: url("https://images.unsplash.com/photo-1709228886139-7c4c25745c0d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: 0% 54%;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     */
+     justify-content: center;
+     align-items: center;
+}
+
+.section-principal div {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.307);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    padding: 1.25rem;
+}
+
+
+.card{
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.wtsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.corazon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
