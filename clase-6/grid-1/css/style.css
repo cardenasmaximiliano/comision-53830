@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.grid{
+    display:grid;
+    width: 100%;
+    height: 100vh;
+    /**
+    viewwidth: es tomar el tamaño total de mi pantalla en cuanto al ancho
+    viewheight: es toma el tamaño total de la pantalla pero en el largo
+    */
+
+    grid-template-columns: repeat(4, 200px) ; /*repeat(cantidad de columas, medida de esa col)*/
+    grid-template-rows: repeat(4,100px);/*no hay maximo de filas*/
+    grid-template-areas: 
+    "div2 div2 div1 div1"
+    "div2 div2 pepito div4"
+    "div2 div2 . div4"
+    "div5 div5 div5 div4"
+    ;
+    justify-content: center;
+    align-content: center;
+    /**propiedades efectante a los hijos**/
+    /* justify-items: center;
+    align-items: center; */
+
+    /* gap: 1.25rem; */
+    column-gap: 10px;
+    row-gap: 5px;
+}
+.div1 {
+    background-color: lightblue;
+    grid-area: div1;
+    justify-self: center;
+    align-self: center;
+}
+.div2 {
+    background-color: rgb(183, 230, 173);
+    grid-area: div2;
+}
+.div3 {
+    background-color: rgb(230, 224, 173);
+    grid-area: pepito;
+}
+.div4 {
+    background-color: rgb(230, 185, 173);
+    grid-area: div4;
+}
+.div5 {
+    background-color: rgb(227, 173, 230);
+    grid-area: div5;
+}
+
+
+
