@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 20px 0px;
+    background-color:beige;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/**
+pseudoclase, se reconoce en un codigo por utilizar :
+
+hover: nos permite aplicar propiedades a nuestro codigo,
+que se van a mostrar siempre y cuando el mouse se posicione sobre 
+nuestro elemento
+***/
+
+
+.navbar li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    background-color:rgba(128, 128, 128, 0.3);
+    border-radius: 5px ;
+}
+
+/*
+active: se aplica al elemento y va a ser activado sus propiedades
+siempre y cuando el usuario mantenga el click sobre el elemento.
+
+
+**/
+
+.navbar li a:active{
+    color: rgb(252, 193, 33);
+}
+
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.galeria img{
+    width: 12.5rem;
+    filter: grayscale(1);
+}
+
+.galeria img:hover{
+    filter: none;
+    box-shadow: 2px 1px 5px grey;
+}
+
+.galeria img:active{
+    filter: blur(2px);
+}
+
+/**
+focus: se aplica cuando ponemos en foco un elemento de entrada
+
+**/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input:focus{
+    color: red;
+    background-color: black;
+}
+
+/* .parrafo p:first-child{
+    color: red;
+}
+
+.parrafo p:last-child{
+    color: pink;
+} */
+
+input::placeholder{
+    color: rgb(2, 0, 0);
+    background-color: lightcoral;
+    text-align: center;
+}
+.parrafo div:nth-child(3){
+    font-size: 2.5rem;
+    color: green;
+}
+.parrafo div:nth-child(2) h2{
+    font-size: 2.5rem;
+    color: rgb(128, 21, 0);
+}
+
+/*
+:not selecciona un elemento que no cumple con un selector especifico
+*/
+
+.pseudoNot p:not(.pepito){
+    background-color: lightblue;
+}
+
+
+
+/**pseudoelementos
+nos permite a nosotros crear elementos virtuales dentro de un elemento HTML
+::
+**/
+
+
+h1{
+    text-align: center;
+}
+
+h1:hover::before{
+    content:"_____ ";
+    color: green;
+    font-size: .625rem;
+}
+
+h1:hover::after{
+    content: " _____";
+    color: blue;
+}
+
+h1::first-letter{
+    font-size: 3.125rem;
+}
+
+.subrayado p::first-line{
+    background-color: violet;
+}
+
+.subrayado p::selection{
+    background-color: black ;
+    color: violet;
+}
